@@ -28,8 +28,8 @@ namespace cw11
         {
             services.AddDbContext<CodeFirstContext>(options =>
             {
-                //options.UseSqlServer(Configuration.GetConnectionString("DbContext"));
-                options.UseSqlServer(Configuration.GetConnectionString("Data Source=db-mssql;Initial Catalog=s18593;Integrated Security=True"));
+                options.UseSqlServer(Configuration.GetConnectionString("DbContext"));
+                //options.UseSqlServer(Configuration.GetConnectionString("Data Source=db-mssql;Initial Catalog=s18593;Integrated Security=True"));
             });
             services.AddControllers();
         }
